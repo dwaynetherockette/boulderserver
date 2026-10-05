@@ -1,0 +1,20 @@
+# Ignore everything by default.
+*
+
+# Track the repo support files.
+!.gitignore
+!README.md
+!start-server.ps1
+!start-server.bat
+!recover-after-crash.ps1
+!recover-after-crash.bat
+
+# Track the Minecraft world.
+!world/
+!world/**
+
+# Track the transient hosting lock while a server is running.
+!HOSTING_LOCK.json
+
+# Never commit Minecraft's runtime session lock.
+world/session.lock
